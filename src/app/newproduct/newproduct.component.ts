@@ -18,10 +18,11 @@ export class NewproductComponent implements OnInit {
 
   ngOnInit(): void {
     this.productForm= this.fb.group({
+      id:null,
       name: ['', Validators.required],
       price: ['', Validators.required],
       description:['', Validators.required],
-      id_category:['', Validators.required],
+      category:['', Validators.required],
     });
     this.shopservice.getAllson().subscribe(resp => {
       this.Categories = resp;

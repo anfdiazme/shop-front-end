@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { NewcategoryComponent } from './newcategory/newcategory.component';
 import { NewproductComponent } from './newproduct/newproduct.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewproductComponent } from './newproduct/newproduct.component';
     CategoriaComponent,
     CategoryComponent,
     NewcategoryComponent,
-    NewproductComponent
+    NewproductComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { NewproductComponent } from './newproduct/newproduct.component';
       {path :'category',component: CategoryComponent},
       {path :'subcategory', component: CategoriaComponent},
       {path :'newcategory', component:NewcategoryComponent},
-      {path :'newproduct', component:NewproductComponent}
+      {path :'newproduct', component:NewproductComponent},
+      {path :'products', component:ProductComponent}
     ])
   ],
   providers: [],

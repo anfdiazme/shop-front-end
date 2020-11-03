@@ -11,6 +11,7 @@ export class shopService {
   private Api_newc = "http://localhost:8080/newcategory";
   private API_son ="http://localhost:8080/categoryson";
   private API_newp="http://localhost:8080/newproduct";
+  private API_pro="http://localhost:8080/allproduct";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -31,5 +32,8 @@ export class shopService {
   public newp (product:any): Observable<any>{
     return this.httpClient.post(this.API_newp,product);
   }
+  public getAllproduct():Observable<any> {
+    return this.httpClient.get(this.API_pro);
+  } 
 }
 
