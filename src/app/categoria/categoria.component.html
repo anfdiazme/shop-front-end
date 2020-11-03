@@ -1,0 +1,17 @@
+
+<h1>Subcategorias</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Category">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+    </tr> 
+  </tbody>
+</table>
+<router-outlet></router-outlet>
